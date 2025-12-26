@@ -38,14 +38,14 @@ const Hero = () => {
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
                         Premium Traditional
                         <span className="block Milk-gradient bg-clip-text text-transparent">
-                            Khova & Milk Products
+                            Kova & Milk Products
                         </span>
                     </h1>
 
                     {/* Subtext */}
                     <p className="text-lg md:text-xl lg:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
                         Direct from farmers to your table – 100% natural,
-                        hygienic, and preservative-free khova products made with
+                        hygienic, and preservative-free kova products made with
                         traditional expertise.
                     </p>
 

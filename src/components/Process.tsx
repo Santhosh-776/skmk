@@ -32,7 +32,7 @@ const Process = () => {
             icon: ChefHat,
             title: "Traditional Preparation",
             description:
-                "Our master craftsmen use time-honored techniques to create perfect khova with authentic taste.",
+                "Our master craftsmen use time-honored techniques to create perfect kova with authentic taste.",
             details: [
                 "Traditional methods",
                 "Expert craftsmanship",

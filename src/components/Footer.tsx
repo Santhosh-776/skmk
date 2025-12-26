@@ -26,9 +26,9 @@ const Footer = () => {
     ];
 
     const products = [
-        "Unsweetened Khova",
-        "Sweetened Khova",
-        "Elaichi Khova",
+        "Unsweetened Kova",
+        "Sweetened Kova",
+        "Elaichi Kova",
         "Custom Orders",
         "Bulk Orders",
     ];

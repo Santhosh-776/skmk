@@ -29,7 +29,7 @@ const Header = () => {
                         </div>
                         <div>
                             <h1 className="text-2xl font-bold text-secondary">
-                                Sri Krishna Milk Khova
+                                Sri Krishna Milk Kova
                             </h1>
                             <p className="text-sm text-muted-foreground">
                                 Premium Traditional Products

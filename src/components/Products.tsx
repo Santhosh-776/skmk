@@ -1,17 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Star, ShoppingCart, Leaf } from "lucide-react";
-import unsweetenedKhoya from "@/assets/unsweetened-khova.jpeg";
-import sweetenedKhoya from "@/assets/sweetened-khova.jpeg";
-import elaichiKhoya from "@/assets/elaichi-khova.jpg";
+import unsweetenedKhoya from "@/assets/unsweetened-kova.jpeg";
+import sweetenedKhoya from "@/assets/sweetened-kova.jpeg";
+import elaichiKhoya from "@/assets/elaichi-kova.jpg";
 
 const Products = () => {
     const products = [
         {
             id: 1,
-            name: "Unsweetened Khova",
+            name: "Unsweetened Kova",
             description:
-                "Pure, fresh khova made from premium cow's milk. Perfect for traditional sweets and cooking. No added sugar or preservatives.",
+                "Pure, fresh kova made from premium cow's milk. Perfect for traditional sweets and cooking. No added sugar or preservatives.",
             price: "₹280",
             unit: "per 1kg",
             image: unsweetenedKhoya,
@@ -26,9 +26,9 @@ const Products = () => {
         },
         {
             id: 2,
-            name: "Sweetened Khova",
+            name: "Sweetened Kova",
             description:
-                "Delicately sweetened khova with the perfect balance of taste. Ideal for making burfi, laddu, and other traditional sweets.",
+                "Delicately sweetened kova with the perfect balance of taste. Ideal for making burfi, laddu, and other traditional sweets.",
             price: "₹220",
             unit: "per 1kg",
             image: sweetenedKhoya,
@@ -43,9 +43,9 @@ const Products = () => {
         },
         {
             id: 3,
-            name: "Elaichi Khova",
+            name: "Elaichi Kova",
             description:
-                "Aromatic khova infused with premium cardamom. A gourmet treat with a rich, fragrant flavor perfect for special occasions.",
+                "Aromatic kova infused with premium cardamom. A gourmet treat with a rich, fragrant flavor perfect for special occasions.",
             price: "₹205",
             unit: "per 1kg",
             image: elaichiKhoya,
@@ -81,7 +81,7 @@ const Products = () => {
                         </span>
                     </div>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-                        Traditional Khova Varieties
+                        Traditional Kova Varieties
                     </h2>
                     <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                         Each product is crafted with care using traditional

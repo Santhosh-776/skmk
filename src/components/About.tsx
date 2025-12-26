@@ -1,5 +1,5 @@
 import { Shield, Heart, Truck, Award } from "lucide-react";
-import khoyaImage from "@/assets/khova-traditional.jpeg";
+import khoyaImage from "@/assets/Kova-main.jpeg";
 
 const About = () => {
     const features = [
@@ -13,7 +13,7 @@ const About = () => {
             icon: Shield,
             title: "Traditional Preparation",
             description:
-                "Our khova is prepared using time-honored traditional methods passed down through generations, ensuring authentic taste and texture.",
+                "Our kova is prepared using time-honored traditional methods passed down through generations, ensuring authentic taste and texture.",
         },
         {
             icon: Truck,
@@ -70,7 +70,7 @@ const About = () => {
                                 Every product we create tells a story of
                                 dedication, from the careful selection of the
                                 finest cow's milk to the artisanal preparation
-                                of our signature khova varieties.
+                                of our signature kova varieties.
                             </p>
                         </div>
 
@@ -99,7 +99,7 @@ const About = () => {
                         <div className="relative z-10">
                             <img
                                 src={khoyaImage}
-                                alt="Traditional khova preparation in copper vessel"
+                                alt="Traditional kova preparation in copper vessel"
                                 className="w-full h-[500px] object-cover rounded-2xl shadow-card"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
@@ -118,7 +118,7 @@ const About = () => {
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                         <div className="text-center">
                             <div className="text-3xl md:text-4xl font-bold text-Milk-green mb-2">
-                                10+
+                                46+
                             </div>
                             <div className="text-muted-foreground">
                                 Years of Excellence

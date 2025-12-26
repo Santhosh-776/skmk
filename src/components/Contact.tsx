@@ -8,10 +8,7 @@ import {
     Mail,
     MapPin,
     Clock,
-    Facebook,
-    Instagram,
     MessageCircle,
-    Youtube,
     Send,
     CheckCircle,
 } from "lucide-react";
@@ -39,42 +36,62 @@ const Contact = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        setIsSubmitting(true);
 
-        // Simulate form submission
+        const subject = `Inquiry from ${formData.name}`;
+        const body = `
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+
+Message:
+${formData.message}
+        `.trim();
+
+        // Gmail compose URL
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=srikrishnamilkkova@gmail.com&su=${encodeURIComponent(
+            subject
+        )}&body=${encodeURIComponent(body)}`;
+
+        // Open Gmail in new tab
+        window.open(gmailUrl, "_blank");
+
+        toast({
+            title: "Opening Gmail",
+            description: "Gmail will open in a new tab to send your message.",
+        });
+
+        // Clear form after opening Gmail
         setTimeout(() => {
-            toast({
-                title: "Message Sent Successfully!",
-                description:
-                    "Thank you for contacting us. We'll get back to you within 24 hours.",
-            });
             setFormData({ name: "", email: "", phone: "", message: "" });
-            setIsSubmitting(false);
         }, 1000);
     };
 
+    const handleOpenMap = () => {
+        const googleMapsUrl = `https://www.google.com/maps/place/Sri+Krishna+milk+kova/@12.9360193,78.841922,13z/data=!4m10!1m2!2m1!1sSri+Krishna+Milk+Products+Main+Road+Milk+Colony+City+123456!3m6!1s0x3bad6ca7601cb1db:0x7dce311b7a775f97!8m2!3d12.9527427!4d78.9288063!15sCjtTcmkgS3Jpc2huYSBNaWxrIFByb2R1Y3RzIE1haW4gUm9hZCBNaWxrIENvbG9ueSBDaXR5IDEyMzQ1Nlo9Ijtzcmkga3Jpc2huYSBtaWxrIHByb2R1Y3RzIG1haW4gcm9hZCBtaWxrIGNvbG9ueSBjaXR5IDEyMzQ1NpIBDmRhaXJ5X3N1cHBsaWVy4AEA!16s%2Fg%2F11d_tr4j4p?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D`;
+        window.open(googleMapsUrl, "_blank");
+    };
     const contactInfo = [
         {
             icon: Phone,
             title: "Call Us",
-            details: ["+91 98765 43210", "+91 87654 32109"],
-            action: "tel:+919876543210",
+            details: ["+91 9442773918", "+91 9884029157"],
+            action: "tel:+919442773918",
             color: "dairy-green",
         },
         {
             icon: Mail,
             title: "Email Us",
-            details: ["info@srikrishnadairy.com", "orders@srikrishnadairy.com"],
-            action: "mailto:info@srikrishnadairy.com",
+            details: ["srikrishnamilkkova@gmail.com"],
+            action: "mailto:srikrishnamilkkova@gmail.com",
             color: "dairy-orange",
         },
         {
             icon: MapPin,
             title: "Visit Us",
             details: [
-                "Sri Krishna Dairy",
-                "Main Road, Dairy Colony",
-                "City - 123456",
+                "Sri Krishna Dairy - Proprietor: P. Ashokkumar",
+                "3/442 Keel St, K. A. Mottur",
+                "Keelalathur, K.V. Kuppam, Vellore",
             ],
             action: "#map",
             color: "dairy-green",
@@ -82,28 +99,13 @@ const Contact = () => {
         {
             icon: Clock,
             title: "Business Hours",
-            details: ["Mon - Sat: 6:00 AM - 8:00 PM", "Sun: 7:00 AM - 6:00 PM"],
+            details: ["Mon - Sun: 8:00 AM - 8:00 PM"],
             action: null,
             color: "dairy-orange",
         },
     ];
 
-    const socialLinks = [
-        { icon: Facebook, name: "Facebook", url: "#", color: "text-blue-600" },
-        {
-            icon: Instagram,
-            name: "Instagram",
-            url: "#",
-            color: "text-pink-600",
-        },
-        {
-            icon: MessageCircle,
-            name: "WhatsApp",
-            url: "https://wa.me/919876543210",
-            color: "text-green-600",
-        },
-        { icon: Youtube, name: "YouTube", url: "#", color: "text-red-600" },
-    ];
+    //
 
     return (
         <section
@@ -176,26 +178,6 @@ const Contact = () => {
                                     </div>
                                 </Card>
                             ))}
-                        </div>
-
-                        {/* Social Media */}
-                        <div>
-                            <h4 className="font-semibold text-foreground mb-4">
-                                Follow Us
-                            </h4>
-                            <div className="flex gap-3">
-                                {socialLinks.map((social, index) => (
-                                    <a
-                                        key={index}
-                                        href={social.url}
-                                        className="w-12 h-12 rounded-full bg-white border border-border flex items-center justify-center hover:scale-110 transition-transform shadow-soft hover:shadow-card"
-                                        aria-label={social.name}>
-                                        <social.icon
-                                            className={`h-5 w-5 ${social.color}`}
-                                        />
-                                    </a>
-                                ))}
-                            </div>
                         </div>
                     </div>
 
@@ -318,7 +300,6 @@ const Contact = () => {
                     </div>
                 </div>
 
-                {/* Map Section */}
                 <div
                     className="mt-16"
                     id="map">
@@ -332,13 +313,22 @@ const Contact = () => {
                                 <p className="text-lg font-medium text-foreground mb-2">
                                     Sri Krishna Dairy
                                 </p>
+                                <p className="text-sm font-medium text-foreground">
+                                    Proprietor: P. Ashokkumar
+                                </p>
+                                <p className="text-muted-foreground mt-2">
+                                    3/442 Keel St, K. A. Mottur
+                                </p>
                                 <p className="text-muted-foreground">
-                                    Main Road, Dairy Colony, City - 123456
+                                    Keelalathur, K.V. Kuppam, Vellore
                                 </p>
                                 <Button
                                     variant="outline"
                                     size="sm"
-                                    className="mt-4">
+                                    className="mt-4"
+                                    onClick={() => {
+                                        handleOpenMap();
+                                    }}>
                                     Get Directions
                                 </Button>
                             </div>
