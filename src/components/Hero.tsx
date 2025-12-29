@@ -30,13 +30,13 @@ const Hero = () => {
                     {/* Badge */}
                     <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8 animate-float">
                         <span className="text-sm font-medium">
-                            🥛 Premium Traditional Milk Products
+                            🥛 Premium Milk Products
                         </span>
                     </div>
 
                     {/* Main Headline */}
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-                        Premium Traditional
+                        Premium
                         <span className="block Milk-gradient bg-clip-text text-transparent">
                             Kova & Milk Products
                         </span>
@@ -61,7 +61,7 @@ const Hero = () => {
                         </div>
                         <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
                             <span className="text-green-400">✓</span>
-                            <span>Traditional Methods</span>
+                            <span>Organic Methods</span>
                         </div>
                     </div>
 
@@ -75,26 +75,17 @@ const Hero = () => {
                             Contact Us Today
                             <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                         </Button>
-                        <a href="tel:+919876543210">
-                            <Button
-                                variant="outline"
-                                size="lg"
-                                className="gap-3 bg-white/10 border-white/30 text-white hover:bg-white hover:text-Milk-green">
-                                <Phone className="h-5 w-5" />
-                                Call Now
-                            </Button>
-                        </a>
                     </div>
 
                     {/* Trust Indicators */}
                     <div className="mt-12 pt-8 border-t border-white/20">
                         <p className="text-white/70 mb-4">
-                            Trusted by thousands of families across the region
+                            Trusted by thousands of families
                         </p>
                         <div className="flex flex-wrap justify-center gap-8 text-white/60">
                             <div className="text-center">
                                 <div className="text-2xl font-bold text-white">
-                                    10+
+                                    50+
                                 </div>
                                 <div className="text-sm">Years Experience</div>
                             </div>
@@ -108,7 +99,7 @@ const Hero = () => {
                                 <div className="text-2xl font-bold text-white">
                                     100%
                                 </div>
-                                <div className="text-sm">Natural Products</div>
+                                <div className="text-sm">Organic Products</div>
                             </div>
                         </div>
                     </div>

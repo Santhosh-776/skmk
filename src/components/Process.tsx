@@ -43,11 +43,11 @@ const Process = () => {
         },
         {
             icon: Package,
-            title: "Vacuum Packaging",
+            title: "Hygenic Packaging",
             description:
-                "Advanced vacuum packaging technology ensures freshness and extends shelf life naturally.",
+                "Advanced hygenic packaging technology ensures freshness and extends shelf life naturally.",
             details: [
-                "Vacuum sealed",
+                "Hygenic sealed",
                 "Extended freshness",
                 "Hygienic packaging",
                 "Safe storage",
@@ -74,9 +74,8 @@ const Process = () => {
                     </h2>
                     <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                         Our commitment to quality begins at the source and
-                        continues through every step of our traditional
-                        preparation process, ensuring you receive the finest
-                        Milk products.
+                        continues through every step of our organic preparation
+                        process, ensuring you receive the finest Milk products.
                     </p>
                 </div>
 
@@ -137,51 +136,48 @@ const Process = () => {
                     ))}
                 </div>
 
-                {/* Process Highlights */}
-                <div className="mt-20 grid md:grid-cols-3 gap-8">
-                    <div className="text-center">
-                        <div className="Milk-gradient w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-soft">
-                            <span className="text-white text-2xl font-bold">
-                                0
-                            </span>
+                {/* Process Highlight */}
+                <div className="mt-20">
+                    <div className="card-gradient p-8 md:p-10 rounded-2xl border-2 border-Milk-orange/30 shadow-hero">
+                        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+                            <div className="orange-gradient w-24 h-24 md:w-28 md:h-28 rounded-2xl flex items-center justify-center shadow-card flex-shrink-0 transform hover:scale-105 transition-transform">
+                                <div className="text-center">
+                                    <span className="text-white text-4xl md:text-5xl font-bold block">
+                                        24
+                                    </span>
+                                    <span className="text-white/90 text-xs md:text-sm font-medium">
+                                        HOURS
+                                    </span>
+                                </div>
+                            </div>
+                            <div className="flex-1 text-center md:text-left">
+                                <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2 md:mb-3">
+                                    Complete Process in{" "}
+                                    <span className="text-Milk-orange">
+                                        24 Hours
+                                    </span>
+                                </h3>
+                                <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                                    From the moment we source fresh milk from
+                                    local farms to the final hygienic food-grade
+                                    packaging, our entire production process is
+                                    completed within 24 hours. This rapid
+                                    turnaround ensures{" "}
+                                    <span className="font-semibold text-foreground">
+                                        maximum freshness
+                                    </span>
+                                    ,{" "}
+                                    <span className="font-semibold text-foreground">
+                                        superior quality
+                                    </span>
+                                    , and{" "}
+                                    <span className="font-semibold text-foreground">
+                                        authentic taste
+                                    </span>{" "}
+                                    in every product.
+                                </p>
+                            </div>
                         </div>
-                        <h3 className="text-lg font-bold text-foreground mb-2">
-                            Zero Preservatives
-                        </h3>
-                        <p className="text-muted-foreground text-sm">
-                            Our traditional methods and vacuum packaging
-                            eliminate the need for artificial preservatives.
-                        </p>
-                    </div>
-
-                    <div className="text-center">
-                        <div className="orange-gradient w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-soft">
-                            <span className="text-white text-2xl font-bold">
-                                24
-                            </span>
-                        </div>
-                        <h3 className="text-lg font-bold text-foreground mb-2">
-                            24-Hour Process
-                        </h3>
-                        <p className="text-muted-foreground text-sm">
-                            From milk sourcing to final packaging, our entire
-                            process is completed within 24 hours.
-                        </p>
-                    </div>
-
-                    <div className="text-center">
-                        <div className="Milk-gradient w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-soft">
-                            <span className="text-white text-2xl font-bold">
-                                100
-                            </span>
-                        </div>
-                        <h3 className="text-lg font-bold text-foreground mb-2">
-                            100% Quality
-                        </h3>
-                        <p className="text-muted-foreground text-sm">
-                            Every batch meets our stringent quality standards
-                            before reaching your kitchen.
-                        </p>
                     </div>
                 </div>
 
@@ -204,10 +200,6 @@ const Process = () => {
                             <div className="flex items-center gap-2">
                                 <CheckCircle className="h-5 w-5 text-Milk-green" />
                                 <span>ISO Quality Standards</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckCircle className="h-5 w-5 text-Milk-green" />
-                                <span>Regular Lab Testing</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <CheckCircle className="h-5 w-5 text-Milk-green" />

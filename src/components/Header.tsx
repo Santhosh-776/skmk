@@ -32,7 +32,7 @@ const Header = () => {
                                 Sri Krishna Milk Kova
                             </h1>
                             <p className="text-sm text-muted-foreground">
-                                Premium Traditional Products
+                                Premium Kova Products
                             </p>
                         </div>
                     </div>
@@ -55,6 +55,11 @@ const Header = () => {
                             Products
                         </button>
                         <button
+                            onClick={() => scrollToSection("delivery")}
+                            className="text-foreground hover:text-Milk-green transition-smooth font-semibold">
+                            Delivery
+                        </button>
+                        <button
                             onClick={() => scrollToSection("process")}
                             className="text-foreground hover:text-Milk-green transition-smooth font-semibold">
                             Our Process
@@ -69,7 +74,7 @@ const Header = () => {
                     {/* Contact Button & Mobile Menu */}
                     <div className="flex items-center space-x-4">
                         <a
-                            href="tel:+919876543210"
+                            href="tel:+9442773918"
                             className="hidden md:flex">
                             <Button
                                 variant="outline"
@@ -123,7 +128,7 @@ const Header = () => {
                                 Contact
                             </button>
                             <a
-                                href="tel:+919876543210"
+                                href="tel:+919442773918"
                                 className="pt-3">
                                 <Button
                                     variant="outline"

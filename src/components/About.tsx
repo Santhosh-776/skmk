@@ -19,7 +19,7 @@ const About = () => {
             icon: Truck,
             title: "Hygienic Packaging",
             description:
-                "State-of-the-art vacuum packaging and cold storage facilities maintain freshness and extend shelf life without preservatives.",
+                "State-of-the-art hygienic food-grade packaging and cold storage facilities maintain freshness and extend shelf life without preservatives.",
         },
         {
             icon: Award,
@@ -45,9 +45,9 @@ const About = () => {
                         Tradition Meets Quality
                     </h2>
                     <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                        For over a decade, we've been dedicated to bringing you
-                        the finest traditional Milk products, crafted with love
-                        and expertise that spans generations.
+                        For more than 5 decades, we've been dedicated to
+                        bringing you the finest traditional Milk products,
+                        crafted with love and expertise that spans generations.
                     </p>
                 </div>
 
@@ -137,7 +137,7 @@ const About = () => {
                                 100%
                             </div>
                             <div className="text-muted-foreground">
-                                Natural Ingredients
+                                Organic Ingredients
                             </div>
                         </div>
                         <div className="text-center">

@@ -3,16 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
-import {
-    Phone,
-    Mail,
-    MapPin,
-    Clock,
-    MessageCircle,
-    Send,
-    CheckCircle,
-} from "lucide-react";
+import { Phone, MapPin, Send, CheckCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { contactInfo } from "@/lib/contact";
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -70,40 +63,6 @@ ${formData.message}
         const googleMapsUrl = `https://www.google.com/maps/place/Sri+Krishna+milk+kova/@12.9360193,78.841922,13z/data=!4m10!1m2!2m1!1sSri+Krishna+Milk+Products+Main+Road+Milk+Colony+City+123456!3m6!1s0x3bad6ca7601cb1db:0x7dce311b7a775f97!8m2!3d12.9527427!4d78.9288063!15sCjtTcmkgS3Jpc2huYSBNaWxrIFByb2R1Y3RzIE1haW4gUm9hZCBNaWxrIENvbG9ueSBDaXR5IDEyMzQ1Nlo9Ijtzcmkga3Jpc2huYSBtaWxrIHByb2R1Y3RzIG1haW4gcm9hZCBtaWxrIGNvbG9ueSBjaXR5IDEyMzQ1NpIBDmRhaXJ5X3N1cHBsaWVy4AEA!16s%2Fg%2F11d_tr4j4p?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D`;
         window.open(googleMapsUrl, "_blank");
     };
-    const contactInfo = [
-        {
-            icon: Phone,
-            title: "Call Us",
-            details: ["+91 9442773918", "+91 9884029157"],
-            action: "tel:+919442773918",
-            color: "dairy-green",
-        },
-        {
-            icon: Mail,
-            title: "Email Us",
-            details: ["srikrishnamilkkova@gmail.com"],
-            action: "mailto:srikrishnamilkkova@gmail.com",
-            color: "dairy-orange",
-        },
-        {
-            icon: MapPin,
-            title: "Visit Us",
-            details: [
-                "Sri Krishna Dairy - Proprietor: P. Ashokkumar",
-                "3/442 Keel St, K. A. Mottur",
-                "Keelalathur, K.V. Kuppam, Vellore",
-            ],
-            action: "#map",
-            color: "dairy-green",
-        },
-        {
-            icon: Clock,
-            title: "Business Hours",
-            details: ["Mon - Sun: 8:00 AM - 8:00 PM"],
-            action: null,
-            color: "dairy-orange",
-        },
-    ];
 
     //
 

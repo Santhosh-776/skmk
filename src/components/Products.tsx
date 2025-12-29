@@ -12,7 +12,6 @@ const Products = () => {
             name: "Unsweetened Kova",
             description:
                 "Pure, fresh kova made from premium cow's milk. Perfect for traditional sweets and cooking. No added sugar or preservatives.",
-            price: "₹280",
             unit: "per 1kg",
             image: unsweetenedKhoya,
             badges: ["Pure", "Sugar-Free"],
@@ -29,7 +28,6 @@ const Products = () => {
             name: "Sweetened Kova",
             description:
                 "Delicately sweetened kova with the perfect balance of taste. Ideal for making burfi, laddu, and other traditional sweets.",
-            price: "₹220",
             unit: "per 1kg",
             image: sweetenedKhoya,
             badges: ["Bestseller", "Traditional"],
@@ -46,7 +44,6 @@ const Products = () => {
             name: "Elaichi Kova",
             description:
                 "Aromatic kova infused with premium cardamom. A gourmet treat with a rich, fragrant flavor perfect for special occasions.",
-            price: "₹205",
             unit: "per 1kg",
             image: elaichiKhoya,
             badges: ["Premium", "Aromatic"],
@@ -154,26 +151,6 @@ const Products = () => {
                                             )
                                         )}
                                     </div>
-                                </div>
-
-                                {/* Price and CTA */}
-                                <div className="flex items-center justify-between">
-                                    <div>
-                                        <div className="text-2xl font-bold text-Milk-green">
-                                            {product.price}
-                                        </div>
-                                        <div className="text-xs text-muted-foreground">
-                                            {product.unit}
-                                        </div>
-                                    </div>
-                                    <Button
-                                        variant="secondary"
-                                        size="sm"
-                                        onClick={scrollToContact}
-                                        className="gap-2 group">
-                                        <ShoppingCart className="h-4 w-4 group-hover:scale-110 transition-transform" />
-                                        Order Now
-                                    </Button>
                                 </div>
                             </div>
                         </div>
